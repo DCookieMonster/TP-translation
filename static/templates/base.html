@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>TP</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+{#<link rel="stylesheet" href="../static/base.css">#}
+<link rel="stylesheet" href="https://6b3248a10e3a99c1bdd6f2e3ce6747636343606d.googledrive.com/host/0B9vxGlM6fIF5fl81MTJYUjBOX184R1JTZHJrWlJyend0SnRLMXJuTVhZRVRjQUFfN1VEamc/base.css">
+    <link rel="stylesheet" href="https://6b3248a10e3a99c1bdd6f2e3ce6747636343606d.googledrive.com/host/0B9vxGlM6fIF5fl81MTJYUjBOX184R1JTZHJrWlJyend0SnRLMXJuTVhZRVRjQUFfN1VEamc/index.css">
+
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+<!-- fix top navbar --->
+    <!-- Second navbar for sign in -->
+{% if user.is_authenticated %}
+
+     <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="" href="{% url 'home' %}"><img style="height: 50px"  src="https://6b3248a10e3a99c1bdd6f2e3ce6747636343606d.googledrive.com/host/0B9vxGlM6fIF5fl81MTJYUjBOX184R1JTZHJrWlJyend0SnRLMXJuTVhZRVRjQUFfN1VEamc/img/logo.png"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-2">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a id="a_home"  href="{% url 'home' %}">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="{% url 'upload' %}">Upload Paper</a></li>
+              <li><a href="{% url 'profile' %}">Profile</a></li>
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+<li><a style="color: #333333" href="{% url 'logout' %}">Log out </a></li>
+
+            <li>
+              <a id="btn_sign" class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Code</a>
+            </li>
+          </ul>
+          <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
+            <form class="navbar-form navbar-right form-inline" action="{%  url 'code' %}" method="post" role="form">{%  csrf_token %}
+              <div class="form-group">
+                <label class="sr-only" for="Code">Code</label>
+                <input type="text" class="form-control" id="code" name="code" placeholder="Code" autofocus required />
+              </div>
+
+              <button type="submit" class="btn btn-success">Get Paragraph</button>
+            </form>
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+{% else %}
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="" href="{% url 'home' %}"><img style="height: 50px"  src="https://6b3248a10e3a99c1bdd6f2e3ce6747636343606d.googledrive.com/host/0B9vxGlM6fIF5fl81MTJYUjBOX184R1JTZHJrWlJyend0SnRLMXJuTVhZRVRjQUFfN1VEamc/img/logo.png"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-2">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="a_home"  href="{% url 'home' %}">Home</a></li>
+            <li><a href="#">About</a></li>
+{#            <li><a href="{% url 'upload' %}">Upload Paper</a></li>#}
+                                        <li><a href="{% url 'home' %}">Sign In</a></li>
+
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+{##}
+{#            <li>#}
+{#              <a id="btn_sign" class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Code</a>#}
+{#            </li>#}
+          </ul>
+{#          <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">#}
+{#            <form class="navbar-form navbar-right form-inline" action="{%  url 'home' %}" method="post" role="form">{%  csrf_token %}#}
+{#              <div class="form-group">#}
+{#                <label class="sr-only" for="Code">Code</label>#}
+{#                <input type="text" class="form-control" id="code" name="code" placeholder="Code" autofocus required />#}
+{#              </div>#}
+{##}
+{#              <button type="submit" class="btn btn-success">Get Paragraph</button>#}
+{#            </form>#}
+{#          </div>#}
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+{% endif %}
+{#<div class="clear"></div>#}
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
