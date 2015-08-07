@@ -289,7 +289,7 @@ def GetFile(request):
             f.getvalue(),
             content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document'
         )
-        response['Content-Disposition'] = 'attachment; filename=translated-'+paper.name
+        response['Content-Disposition'] = 'attachment; filename='+paper.name
         response['Content-Length'] = length
         return response
     # if(request.method=='POST'):
