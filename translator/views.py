@@ -279,7 +279,8 @@ def GetFile(request):
 
         para=Paragraph.objects.filter(id=request.POST['paraId'])[0]
         paper=Paper.objects.filter(id=para.paperId.id)[0]        # paper=Paper.objects.filter(id=para.paperId.id)[0]
-        document = Docx.original_file(paper)
+        # document = Docx.original_file(paper)
+        document =Document(paper.docx)
         f = StringIO()
         document.save(f)
         length = f.tell()

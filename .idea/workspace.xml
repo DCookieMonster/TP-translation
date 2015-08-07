@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d083431-384b-4864-90fb-bcaf2ef24797" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/templates/tutorial.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translator/Docx.py" afterPath="$PROJECT_DIR$/translator/Docx.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/base.html" afterPath="$PROJECT_DIR$/static/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translator/form.py" afterPath="$PROJECT_DIR$/translator/form.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translatePage/settings.py" afterPath="$PROJECT_DIR$/translatePage/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/translate.html" afterPath="$PROJECT_DIR$/static/templates/translate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/upload.html" afterPath="$PROJECT_DIR$/static/templates/upload.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translatePage/urls.py" afterPath="$PROJECT_DIR$/translatePage/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translator/views.py" afterPath="$PROJECT_DIR$/translator/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -47,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.445141">
+            <state vertical-scroll-proportion="7.9583335">
               <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding />
             </state>
@@ -82,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/translator/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="426" column="32" selection-start-line="426" selection-start-column="32" selection-end-line="426" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.3877551">
+              <caret line="282" column="38" selection-start-line="282" selection-start-column="38" selection-end-line="282" selection-end-column="38" />
               <folding>
                 <element signature="e#0#69#0" expanded="true" />
               </folding>
@@ -172,10 +163,10 @@
         <option value="$PROJECT_DIR$/static/templates/translate.html" />
         <option value="$PROJECT_DIR$/translator/Docx.py" />
         <option value="$PROJECT_DIR$/static/templates/how_it_works.html" />
-        <option value="$PROJECT_DIR$/translator/views.py" />
         <option value="$PROJECT_DIR$/translatePage/urls.py" />
         <option value="$PROJECT_DIR$/static/templates/tutorial.html" />
         <option value="$PROJECT_DIR$/static/templates/base.html" />
+        <option value="$PROJECT_DIR$/translator/views.py" />
       </list>
     </option>
   </component>
@@ -636,7 +627,13 @@
       <option name="project" value="LOCAL" />
       <updated>1438857963726</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tutorial">
+      <created>1438952531365</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1438952531365</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -679,7 +676,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tinymce" />
-    <option name="LAST_COMMIT_MESSAGE" value="tinymce" />
+    <MESSAGE value="tutorial" />
+    <option name="LAST_COMMIT_MESSAGE" value="tutorial" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1058,16 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/translator/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="426" column="32" selection-start-line="426" selection-start-column="32" selection-end-line="426" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/translatePage/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1091,9 +1079,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.445141">
+        <state vertical-scroll-proportion="7.9583335">
           <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translator/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3877551">
+          <caret line="282" column="38" selection-start-line="282" selection-start-column="38" selection-end-line="282" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
