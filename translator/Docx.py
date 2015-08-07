@@ -10,13 +10,17 @@ from HTMLParser import HTMLParser
 from docx import Document
 from django.utils.encoding import smart_unicode
 # create a subclass and override the handler methods
+from docx.text.run import Font, Run
 
 class MyHTMLParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         if tag == 'p':
             self.p = document.add_paragraph()
-        elif tag == 'br':
-            document.add_paragraph("")
+        elif tag == 'br' and self.p is not None:
+            run=self.p.add_run()
+            run.add_break()
+            # run.breaks
+
         elif tag == 'ol':
             self.numbers=True
         elif tag =='ul':
@@ -35,13 +39,13 @@ class MyHTMLParser(HTMLParser):
             self.i=False
 
     def handle_data(self, data):
-        if self.lasttag == 'p' :
+        if self.lasttag == 'p' and self.p is not None :
             self.p.add_run(data)
-        elif self.lasttag == 'strong':
+        elif self.lasttag == 'strong' and self.p is not None:
             add_run=self.p.add_run(data)
             add_run.bold=self.bold
             # add_run.font.rtl=True
-        elif self.lasttag == 'i' or self.lasttag == 'em':
+        elif (self.lasttag == 'i' or self.lasttag == 'em') and self.p is not None :
             add_run = self.p.add_run(data)
             add_run.italic = self.i
             # add_run.font.rtl=True
@@ -74,5 +78,27 @@ def WriteDocx(paper):
 
         else:
             htmlPaper+="<p>"+para.txt+"</p>"
+    parser.feed(smart_unicode(htmlPaper))
+    return document
+
+def original_file(paper):
+
+    document.add_heading(paper.name, 0)
+    htmlPaper=""
+    Paras=Paragraph.objects.filter(paperId=paper)
+    for para in Paras:
+            htmlPaper+="<p>"+para.txt+"</p>"
+    parser.feed(smart_unicode(htmlPaper))
+    return document
+
+def original_file_bold(paper,num):
+    document.add_heading(paper.name, 0)
+    htmlPaper=""
+    Paras=Paragraph.objects.filter(paperId=paper)
+    for para in Paras:
+        if para.num == int(num):
+            htmlPaper += "<p><strong>"+para.txt+"</strong></p>"
+            continue
+        htmlPaper += "<p>"+para.txt+"</p>"
     parser.feed(smart_unicode(htmlPaper))
     return document

@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d083431-384b-4864-90fb-bcaf2ef24797" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/register.html" afterPath="$PROJECT_DIR$/static/templates/register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/templates/tutorial.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translator/Docx.py" afterPath="$PROJECT_DIR$/translator/Docx.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/base.html" afterPath="$PROJECT_DIR$/static/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translator/form.py" afterPath="$PROJECT_DIR$/translator/form.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translatePage/settings.py" afterPath="$PROJECT_DIR$/translatePage/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/translate.html" afterPath="$PROJECT_DIR$/static/templates/translate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/upload.html" afterPath="$PROJECT_DIR$/static/templates/upload.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translatePage/urls.py" afterPath="$PROJECT_DIR$/translatePage/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translator/views.py" afterPath="$PROJECT_DIR$/translator/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TP-translation.iws" />
@@ -28,12 +37,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="upload.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/templates/upload.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="23" column="205" selection-start-line="23" selection-start-column="205" selection-end-line="23" selection-end-column="205" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
-              <caret line="5" column="207" selection-start-line="5" selection-start-column="207" selection-end-line="5" selection-end-column="207" />
+            <state vertical-scroll-proportion="3.445141">
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/translatePage/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tutorial.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/templates/tutorial.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-51.25">
+              <caret line="82" column="41" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
+              <folding>
+                <element signature="e#196#233#0#HTML" expanded="true" />
+                <element signature="e#1208#1227#0#HTML" expanded="true" />
+                <element signature="e#1796#1815#0#HTML" expanded="true" />
+                <element signature="e#2827#2846#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,10 +86,30 @@
         <entry file="file://$PROJECT_DIR$/translator/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="243" column="40" selection-start-line="243" selection-start-column="32" selection-end-line="243" selection-end-column="40" />
+              <caret line="426" column="32" selection-start-line="426" selection-start-column="32" selection-end-line="426" selection-end-column="32" />
               <folding>
                 <element signature="e#0#69#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.25">
+              <caret line="20" column="23" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/templates/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/translator/Docx.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#21#46#0" expanded="true" />
               </folding>
@@ -66,37 +130,7 @@
         <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/translatePage/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="137" column="30" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/templates/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5431472">
-              <caret line="61" column="85" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.1666667">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,28 +139,8 @@
       <file leaf-file-name="translate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/templates/translate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.5">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thankyou.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/templates/thankyou.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.625">
-              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/translatePage/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.25">
+              <caret line="76" column="68" selection-start-line="76" selection-start-column="68" selection-end-line="76" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -148,15 +162,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/static/templates/profilepage.html" />
-        <option value="$PROJECT_DIR$/translator/views.py" />
         <option value="$PROJECT_DIR$/translator/TF-IDF.py" />
-        <option value="$PROJECT_DIR$/translator/Docx.py" />
         <option value="$PROJECT_DIR$/static/templates/index.html" />
-        <option value="$PROJECT_DIR$/static/templates/base.html" />
-        <option value="$PROJECT_DIR$/static/templates/translate.html" />
         <option value="$PROJECT_DIR$/static/templates/thankyou.html" />
-        <option value="$PROJECT_DIR$/translatePage/settings.py" />
         <option value="$PROJECT_DIR$/static/templates/register.html" />
+        <option value="$PROJECT_DIR$/translatePage/settings.py" />
+        <option value="$PROJECT_DIR$/translator/form.py" />
+        <option value="$PROJECT_DIR$/static/templates/upload.html" />
+        <option value="$PROJECT_DIR$/static/templates/translate.html" />
+        <option value="$PROJECT_DIR$/translator/Docx.py" />
+        <option value="$PROJECT_DIR$/static/templates/how_it_works.html" />
+        <option value="$PROJECT_DIR$/translator/views.py" />
+        <option value="$PROJECT_DIR$/translatePage/urls.py" />
+        <option value="$PROJECT_DIR$/static/templates/tutorial.html" />
+        <option value="$PROJECT_DIR$/static/templates/base.html" />
       </list>
     </option>
   </component>
@@ -169,8 +188,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1798" />
-    <option name="height" value="1051" />
+    <option name="width" value="1280" />
+    <option name="height" value="707" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -307,6 +326,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/templates" />
+    </key>
   </component>
   <component name="RunManager" selected="Django server.TP-translation">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -606,16 +630,23 @@
       <option name="project" value="LOCAL" />
       <updated>1438856671885</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tinymce">
+      <created>1438857963726</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1438857963726</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1798" height="1051" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="707" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39728883" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39674798" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24457593" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -623,13 +654,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26025057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36995155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295099" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4601626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -656,21 +686,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/translator/views.py</url>
-          <line>258</line>
+          <line>277</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/translator/Docx.py</url>
-          <line>76</line>
-          <option name="timeStamp" value="5" />
+          <line>94</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/translator/Docx.py</url>
-          <line>77</line>
-          <option name="timeStamp" value="10" />
+          <line>99</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
@@ -679,6 +709,7 @@
         <watch expression="Paper.objects.all()[0]" language="Python" />
         <watch expression="Translated_Paragraph.objects.filter(paraId=para)[0]" language="Python" />
         <watch expression="document" language="Python" />
+        <watch expression="int(num)" language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -873,14 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/translator/RegexTxt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -897,20 +920,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/django/core/handlers/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translator/form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/django/utils/datastructures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="323" column="0" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translatePage/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/django/contrib/auth/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/getCode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.375">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/thankyou.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.375">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/thankyou2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5416665">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/django/utils/encoding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/translate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="76" column="68" selection-start-line="76" selection-start-column="68" selection-end-line="76" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/translator/Docx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#21#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1666667">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="23" column="205" selection-start-line="23" selection-start-column="205" selection-end-line="23" selection-end-column="205" />
           <folding />
         </state>
       </provider>
@@ -918,7 +1061,7 @@
     <entry file="file://$PROJECT_DIR$/translator/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="243" column="40" selection-start-line="243" selection-start-column="32" selection-end-line="243" selection-end-column="40" />
+          <caret line="426" column="32" selection-start-line="426" selection-start-column="32" selection-end-line="426" selection-end-column="32" />
           <folding>
             <element signature="e#0#69#0" expanded="true" />
           </folding>
@@ -928,55 +1071,28 @@
     <entry file="file://$PROJECT_DIR$/translatePage/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/tutorial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-51.25">
+          <caret line="82" column="41" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
+          <folding>
+            <element signature="e#196#233#0#HTML" expanded="true" />
+            <element signature="e#1208#1227#0#HTML" expanded="true" />
+            <element signature="e#1796#1815#0#HTML" expanded="true" />
+            <element signature="e#2827#2846#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="5" column="207" selection-start-line="5" selection-start-column="207" selection-end-line="5" selection-end-column="207" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/translate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.5">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/thankyou.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/HTMLParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/translatePage/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="137" column="30" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5431472">
-          <caret line="61" column="85" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state vertical-scroll-proportion="3.445141">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -6,7 +6,7 @@ from .models import User
 
 class DocumentForm(forms.Form):
     docfile = forms.FileField(
-        label='Select a file'
+        label='Select a .docx file'
     )
 
 

@@ -72,8 +72,9 @@ tinyMCE.PluginManager.add('stylebuttons', function(editor, url) {
                                 <div class="col-md-4">
 </div>
                                                     <div class="col-md-4">
-                                                         <form action="{% url 'getFile' %}" method="post"> {% csrf_token %}
+                                                         <form action="{% url 'get_original_file_bold' %}" method="post"> {% csrf_token %}
                 <input name="paraId" id="paraId" value="{{ id }}" type="hidden">
+                <input name="paraNum" id="paraNum" value="{{ paraNum }}" type="hidden">
                                                                 <button id="close" class=" "   type="submit">Get The Docx File</button>
 
             </form>

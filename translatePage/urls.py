@@ -26,11 +26,14 @@ urlpatterns = [
     url(r'^upload','translator.views.uploadFile',name='upload'),
     url(r'^translate','translator.views.translate',name='translate'),
     url(r'^getFile','translator.views.GetFile',name='getFile'),
+    url(r'^get_original_file_bold','translator.views.get_original_file_bold',name='get_original_file_bold'),
     url(r'^getTranslate','translator.views.get_translated_file',name='getTranslate'),
     url(r'^logout','translator.views.logout_view',name='logout'),
     url(r'^profile','translator.views.profile_page',name='profile'),
     url(r'^contact','translator.views.contact_us',name='contact'),
+    url(r'^tutorial','translator.views.tutorial',name='tutorial'),
     url(r'^admin/', include(admin.site.urls)),
+
 ]
 #
 # if settings.DEBUG:

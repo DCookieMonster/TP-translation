@@ -174,6 +174,15 @@ def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
 
 
 
+def validate_file_extension(value):
+  import os
+  ext = os.path.splitext(value)[1]
+  valid_extensions = ['.docx']
+  if not ext in valid_extensions:
+    return False
+  return True
+
+
 @login_required
 def uploadFile(request):
     # Handle file upload
@@ -182,6 +191,16 @@ def uploadFile(request):
     if request.method == 'POST':
         form = DocumentForm(request.POST, request.FILES)
         if form.is_valid():
+            if not validate_file_extension(request.FILES['docfile']._name):
+
+                form = DocumentForm()
+                context={
+                    'error':'<div class="alert alert-danger alert-dismissible" role="alert">'
+                            ' <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'
+                            'Supporting only .docx Files</div>',
+                    'form':form
+                }
+                return render_to_response('upload.html',context=context,context_instance=RequestContext(request))
             document = Document(request.FILES['docfile'])
             code = id_generator()
             paper = Paper()
@@ -260,7 +279,7 @@ def GetFile(request):
 
         para=Paragraph.objects.filter(id=request.POST['paraId'])[0]
         paper=Paper.objects.filter(id=para.paperId.id)[0]        # paper=Paper.objects.filter(id=para.paperId.id)[0]
-        document = Docx.WriteDocx(paper)
+        document = Docx.original_file(paper)
         f = StringIO()
         document.save(f)
         length = f.tell()
@@ -393,3 +412,25 @@ def contact_us(request):
         contact.save()
         return render(request,"thank_u_contact_us.html",{})
     return render(request,"contact.html",{})
+
+def get_original_file_bold(request):
+     if request.method == 'POST':
+
+        para=Paragraph.objects.filter(id=request.POST['paraId'])[0]
+        paper=Paper.objects.filter(id=para.paperId.id)[0]        # paper=Paper.objects.filter(id=para.paperId.id)[0]
+        # document = Docx.original_file_bold(paper,request.POST['paraNum'])
+        document =Document(paper.docx)
+        f = StringIO()
+        document.save(f)
+        length = f.tell()
+        f.seek(0)
+        response = HttpResponse(
+            f.getvalue(),
+            content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+        )
+        response['Content-Disposition'] = 'attachment; filename='+paper.name
+        response['Content-Length'] = length
+        return response
+
+def tutorial(request):
+    return render(request,"tutorial.html",{})
