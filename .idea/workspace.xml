@@ -2,54 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d083431-384b-4864-90fb-bcaf2ef24797" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/translator/translate_func.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/translator/googleTranslator.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml-3.4.4-py2.7.egg-info/PKG-INFO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml-3.4.4-py2.7.egg-info/SOURCES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml-3.4.4-py2.7.egg-info/dependency_links.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml-3.4.4-py2.7.egg-info/installed-files.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml-3.4.4-py2.7.egg-info/not-zip-safe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml-3.4.4-py2.7.egg-info/requires.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml-3.4.4-py2.7.egg-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.7.0.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.7.0.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.7.0.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.7.0.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.7.0.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.7.0.dist-info/top_level.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml/etree.so" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml/etree.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml/objectify.so" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml/objectify.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translator/Docx.py" afterPath="$PROJECT_DIR$/translator/Docx.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/Django-1.8.3.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/Django-1.8.3.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translator/RegexTxt.py" afterPath="$PROJECT_DIR$/translator/RegexTxt.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml/html/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml/html/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/__init__.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/_collections.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/_collections.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml/_elementpath.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml/_elementpath.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/api.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/api.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/auth.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/auth.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/connection.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/connection.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/cookies.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/cookies.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/bin/django-admin.py" afterPath="$PROJECT_DIR$/venv/bin/django-admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/bin/django-admin" afterPath="$PROJECT_DIR$/venv/bin/django-admin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/exceptions.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/exceptions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml/includes/lxml-version.h" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml/includes/lxml-version.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml/lxml.etree.h" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/lxml/lxml.etree.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/models.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/contrib/pyopenssl.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/contrib/pyopenssl.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/response.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/response.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/sessions.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/sessions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translatePage/settings.py" afterPath="$PROJECT_DIR$/translatePage/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/ssl_.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/ssl_.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/translate.html" afterPath="$PROJECT_DIR$/static/templates/translate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/url.py" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/url.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translator/views.py" afterPath="$PROJECT_DIR$/translator/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TP-translation.iws" />
@@ -101,11 +54,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/translatePage/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="145" column="17" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.51742625">
+              <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,7 +80,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-144.31035">
+            <state vertical-scroll-proportion="-145.34483">
               <caret line="281" column="20" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
@@ -154,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="translate_func.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="translate_func.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/translator/translate_func.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35656837">
+            <state vertical-scroll-proportion="0.0">
               <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding>
                 <element signature="e#20#36#0" expanded="true" />
@@ -239,13 +192,13 @@
         <option value="$PROJECT_DIR$/static/templates/base.html" />
         <option value="$PROJECT_DIR$/venv/lib/python2.7/site-packages/django/__init__.py" />
         <option value="$PROJECT_DIR$/translator/Docx.py" />
-        <option value="$PROJECT_DIR$/translatePage/settings.py" />
         <option value="$PROJECT_DIR$/mysite.log" />
         <option value="$PROJECT_DIR$/translator/translate.py" />
         <option value="$PROJECT_DIR$/translator/views.py" />
         <option value="$PROJECT_DIR$/translator/RegexTxt.py" />
         <option value="$PROJECT_DIR$/translator/translate_func.py" />
         <option value="$PROJECT_DIR$/static/templates/translate.html" />
+        <option value="$PROJECT_DIR$/translatePage/settings.py" />
       </list>
     </option>
   </component>
@@ -775,7 +728,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439011787585</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="translation">
+      <created>1439199438749</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1439199438749</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -830,7 +789,8 @@
     <MESSAGE value="tinymce" />
     <MESSAGE value="tutorial" />
     <MESSAGE value="herokuapp" />
-    <option name="LAST_COMMIT_MESSAGE" value="herokuapp" />
+    <MESSAGE value="translation" />
+    <option name="LAST_COMMIT_MESSAGE" value="translation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1260,17 +1220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite.log">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-144.31035">
-          <caret line="281" column="20" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/translate/translator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.1018767">
@@ -1293,14 +1242,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/translatePage/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="145" column="17" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1344,11 +1285,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/translator/translate_func.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35656837">
+        <state vertical-scroll-proportion="0.0">
           <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding>
             <element signature="e#20#36#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite.log">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-145.34483">
+          <caret line="281" column="20" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translatePage/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51742625">
+          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
