@@ -7,6 +7,8 @@ import json
 import RegexTxt
 from requests import Request, Session
 from requests.adapters import HTTPAdapter
+import logging
+logger = logging.getLogger(__name__)
 
 __all__ = ['push_url', 'translator']
 
@@ -94,6 +96,7 @@ def translator(source, target, phrase, version='0.0 test', charset='utf-8'):
 def translate_text(txt, source="en", target="iw"):
     try:
         translate_dict = translator(source,target, txt)
+        logger.info("translate: "+str(translate_dict[0]))
         # translate_dict = []
         translate_txt = ""
         for element in translate_dict[0]:
