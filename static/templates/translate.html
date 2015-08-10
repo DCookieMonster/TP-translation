@@ -64,13 +64,27 @@ tinyMCE.PluginManager.add('stylebuttons', function(editor, url) {
 {#                    </p>#}
 {#                </div>#}
 {#                <br>#}
-            <div class="row">
+            <div class="row" style="text-align: left">
                 <div class="col-md-4">
-                                    <a href="{{ link }}" target="_blank">See Google Translation For This Paragraph</a>
-
-                    </div>
-                                <div class="col-md-4">
-</div>
+                    <h4>
+                        Possible Translation:
+                    </h4>
+                </div>
+            </div>
+            <div class="row" lang="he" style="direction: rtl;text-align: right">
+                <div class="col-lg-12">
+                    <p style="font-size: 16px" dir="rtl">
+                        {% autoescape off %}{{ translate_txt }}{% endautoescape %}
+                    </p>
+                </div>
+            </div>
+                <div class="row" style="text-align: left">
+{#                <div class="col-md-4">#}
+{#                                    <a href="{{ link }}" target="_blank">See Google Translation For This Paragraph</a>#}
+{##}
+{#                    </div>#}
+{#                                <div class="col-md-4">#}
+{#</div>#}
                                                     <div class="col-md-4">
                                                          <form action="{% url 'get_original_file_bold' %}" method="post"> {% csrf_token %}
                 <input name="paraId" id="paraId" value="{{ id }}" type="hidden">
@@ -80,7 +94,8 @@ tinyMCE.PluginManager.add('stylebuttons', function(editor, url) {
             </form>
                                                         </div>
 
-            </div><br>
+            </div>
+        <br>
 
                 <form action="{% url 'translate' %}" method="post"> {% csrf_token %}
                     <textarea dir="rtl" name="txt-tran" id="txt-tran" type="text" placeholder="תרגם פה" style="width: 100%; max-width: 1000px; height: 100px"></textarea>

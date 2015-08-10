@@ -1,4 +1,4 @@
-#!/Users/dor/Documents/TP/venv/bin/python
+#!/Users/dor/Documents/TP-translation/venv/bin/python
 from django.core import management
 
 if __name__ == "__main__":

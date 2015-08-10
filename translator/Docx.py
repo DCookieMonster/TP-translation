@@ -11,6 +11,8 @@ from docx import Document
 from django.utils.encoding import smart_unicode
 # create a subclass and override the handler methods
 from docx.text.run import Font, Run
+import logging
+logger = logging.getLogger(__name__)
 
 class MyHTMLParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
@@ -68,7 +70,7 @@ parser = MyHTMLParser()
 document = Document()
 
 def WriteDocx(paper):
-
+    logger.info("Download translation file")
     document.add_heading(paper.name, 0)
     htmlPaper=""
     Paras=Paragraph.objects.filter(paperId=paper)
@@ -82,7 +84,7 @@ def WriteDocx(paper):
     return document
 
 def original_file(paper):
-
+    logger.info("Download original file - profile")
     document.add_heading(paper.name, 0)
     htmlPaper=""
     Paras=Paragraph.objects.filter(paperId=paper)
@@ -92,6 +94,7 @@ def original_file(paper):
     return document
 
 def original_file_bold(paper,num):
+    logger.info("Download original file - translation")
     document.add_heading(paper.name, 0)
     htmlPaper=""
     Paras=Paragraph.objects.filter(paperId=paper)

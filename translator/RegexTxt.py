@@ -9,3 +9,9 @@ def RepleceTxt(txt):
     for law in ReList:
         newTxt=newTxt.replace(law[0],law[1])
     return newTxt
+
+def ReverseTxt(txt):
+    newTxt=txt
+    for law in ReList:
+        newTxt=newTxt.replace(law[1],law[0])
+    return newTxt

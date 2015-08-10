@@ -9,6 +9,7 @@ from django.utils.encoding import smart_unicode
 from django.conf import settings
 from django.contrib.auth import authenticate, login
 from docx import Document
+import translate_func
 import random
 import string
 from random import randint
@@ -22,12 +23,12 @@ from django.contrib.auth import logout
 import datetime
 import RegexTxt
 
-import googleTranslator
 from django.core.mail import send_mail
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
 from django.template import Context
-
+import logging
+logger = logging.getLogger(__name__)
 # Create your views here.
 
 @login_required
@@ -42,15 +43,19 @@ def code(request):
                 return render(request,"index.html",context)
 
             para=GetParagraph(request.POST['code'])
+            logger.info("user: "+request.user.username+", id: "+str(request.user.id)+", function: code, code: "+request.POST['code'])
 
             #return paragparh to translate
             tmpTxt=RegexTxt.RepleceTxt(para.txt)
             link='https://translate.google.co.il/#en/iw/'+tmpTxt
+            translate_txt= translate_func.translate_text(tmpTxt)
+            # translate_txt=""
             context={
                 'paraNum': para.num,
                 'txt': para.txt,
                 'id': para.id,
                 'link': link,
+                'translate_txt':translate_txt,
                 # 'tranTxt':tran_txt.output,
             }
             return render(request,"translate.html",context)
@@ -91,6 +96,8 @@ def register(request):
                     login(request, user)
                 response=render_to_response("index.html",locals(),context_instance=RequestContext(request))
                 set_cookie(response,'userId',user.id,days_expire=1)
+                logger.info("user: "+request.user.username+", id: "+str(request.user.id)+", function: login")
+
                 return response
             else:
                 raise ValueError('Not a User')
@@ -133,6 +140,8 @@ def register(request):
         # send_mail('Registration for TP - Translate Page','Hello '+user.first_name+" "+user.last_name+"! \nThank you for choosing TP. Upload your paper and start translate! \n"
         #                                                                                             "your username is:"+user.username, 'do-not-reply@TP.com',  [user.email], fail_silently=False)
         reg_email(user)
+        logger.info("user: "+user.username+", id: "+str(user.id)+", function: register")
+
         user = authenticate(username=request.POST.get('username'),password=request.POST.get('password'))
         login(request, user)
         context={
@@ -209,6 +218,7 @@ def uploadFile(request):
             paper.userId = User.objects.filter(id=request.user.id)[0]
             paper.docx = request.FILES['docfile']
             paper.save()
+            logger.info("user: "+request.user.username+", id: "+str(request.user.id)+",function: upload, file: "+request.FILES['docfile']._name+", code: "+paper.code)
             # Divde to paragraph
             par = ""
             count = 0
@@ -227,6 +237,7 @@ def uploadFile(request):
             return render(request, 'getCode.html', context)
     else:
         form = DocumentForm() # A empty, unbound formxw
+        logger.info("user: "+request.user.username+", id: "+str(request.user.id)+" - upload paper")
 
     # Render list page with the documents and the form
     return render_to_response('upload.html', locals(), context_instance=RequestContext(request))
@@ -252,6 +263,8 @@ def translate(request):
         context = {
             'code': paper.code,
         }
+        logger.info("user: "+request.user.username+", id: "+str(request.user.id)+", function: translation, paragraph: "+str(para.id))
+
         if(check_if_ready(paper)):
             # Docx.WriteDocx(paper)
             user=User.objects.filter(id=paper.userId.id)[0]
@@ -270,6 +283,7 @@ def check_if_ready(paper):
     for para in paragraphs:
         if(not Translated_Paragraph.objects.filter(paraId=para).exists()):
             return False
+    logger.info("paper: "+paper.id+" is ready")
     return True
 
 
@@ -280,6 +294,8 @@ def GetFile(request):
         para=Paragraph.objects.filter(id=request.POST['paraId'])[0]
         paper=Paper.objects.filter(id=para.paperId.id)[0]        # paper=Paper.objects.filter(id=para.paperId.id)[0]
         # document = Docx.original_file(paper)
+        logger.info("user: "+request.user.username+", id: "+str(request.user.id)+", function: getFile, code: "+paper.code)
+
         document =Document(paper.docx)
         f = StringIO()
         document.save(f)
@@ -310,6 +326,7 @@ def GetFile(request):
 
 @login_required
 def logout_view(request):
+    logger.info("user: "+request.user.username+", id: "+str(request.user.id)+", function: logged out")
     logout(request)
     return render_to_response('register.html',locals(),context_instance=RequestContext(request))
 
@@ -318,6 +335,7 @@ def logout_view(request):
 def profile_page(request):
     user = User.objects.filter(id=request.user.id)[0]
     papers = Paper.objects.filter(userId=user)
+    logger.info("user: "+request.user.username+", id: "+str(request.user.id)+", function: profile")
     statusList = []
     for paper in papers:
         paragraphs = Paragraph.objects.filter(paperId=paper)
@@ -352,6 +370,8 @@ def get_translated_file(request):
     if request.method == 'POST':
 
         paper=Paper.objects.filter(id=request.POST['paraId'])[0]
+        logger.info("user: "+request.user.username+", id: "+str(request.user.id)+", function: get_translated_file, code: "+paper.code)
+
         # paper=Paper.objects.filter(id=para.paperId.id)[0]
         document = Docx.WriteDocx(paper)
         f = StringIO()
@@ -419,6 +439,8 @@ def get_original_file_bold(request):
 
         para=Paragraph.objects.filter(id=request.POST['paraId'])[0]
         paper=Paper.objects.filter(id=para.paperId.id)[0]        # paper=Paper.objects.filter(id=para.paperId.id)[0]
+        logger.info("user: "+request.user.username+", id: "+str(request.user.id)+", function: get_original_file_bold, code:"+paper.code)
+
         # document = Docx.original_file_bold(paper,request.POST['paraNum'])
         document =Document(paper.docx)
         f = StringIO()
