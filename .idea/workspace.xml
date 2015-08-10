@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d083431-384b-4864-90fb-bcaf2ef24797" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translatePage/settings.py" afterPath="$PROJECT_DIR$/translatePage/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translator/translate_func.py" afterPath="$PROJECT_DIR$/translator/translate_func.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -58,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/translatePage/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+              <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,11 +100,9 @@
       <file leaf-file-name="translate_func.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/translator/translate_func.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.81751823">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-              <folding>
-                <element signature="e#20#36#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.5985401">
+              <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -185,9 +184,9 @@
         <option value="$PROJECT_DIR$/translator/translate.py" />
         <option value="$PROJECT_DIR$/translator/RegexTxt.py" />
         <option value="$PROJECT_DIR$/static/templates/translate.html" />
-        <option value="$PROJECT_DIR$/translatePage/settings.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/translator/views.py" />
+        <option value="$PROJECT_DIR$/translatePage/settings.py" />
         <option value="$PROJECT_DIR$/translator/translate_func.py" />
       </list>
     </option>
@@ -696,7 +695,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439217233616</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="env">
+      <created>1439217464323</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1439217464323</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -778,8 +783,13 @@
           <line>11</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/translator/translate_func.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
@@ -1201,11 +1211,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/translatePage/settings.py">
+    <entry file="file://$PROJECT_DIR$/translator/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-          <folding />
+          <caret line="52" column="83" selection-start-line="52" selection-start-column="83" selection-end-line="52" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1217,23 +1229,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/translator/views.py">
+    <entry file="file://$PROJECT_DIR$/translatePage/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="83" selection-start-line="52" selection-start-column="83" selection-end-line="52" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#69#0" expanded="true" />
-          </folding>
+          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/translator/translate_func.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81751823">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding>
-            <element signature="e#20#36#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.5985401">
+          <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
