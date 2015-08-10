@@ -49,6 +49,8 @@ def code(request):
             tmpTxt=RegexTxt.RepleceTxt(para.txt)
             link='https://translate.google.co.il/#en/iw/'+tmpTxt
             translate_txt= translate_func.translate_text(tmpTxt)
+            if translate_txt == "":
+                translate_txt = "sorry, not possible translation"
             # translate_txt=""
             context={
                 'paraNum': para.num,
