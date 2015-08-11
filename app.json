@@ -1,0 +1,9 @@
+{
+  "name":"TP-translation",
+  "description":"CrowdSourcing Translation app",
+  "scripts":{},
+  "env":{},
+  "addons":[
+    "heroku-postgresql"
+  ]
+}
